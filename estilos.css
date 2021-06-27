@@ -20,7 +20,7 @@ body {
 
 .neon-button {
     color: var(--clr-neon);
-    font-size: 8rem;
+    font-size: 7rem;
     border: var(--clr-neon) 0.125em solid;
     display: inline-block;
     text-decoration: none;
@@ -75,4 +75,22 @@ body {
 .neon-button:hover::before,
 .neon-button:focus::before {
     opacity: 1;
+}
+
+@media only screen and (max-width: 683px) {
+    .neon-button {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .neon-button {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .neon-button {
+        font-size: 3.5rem;
+    }
 }
